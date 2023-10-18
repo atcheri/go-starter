@@ -1,0 +1,12 @@
+project_name: github.com/atcheri/go-starter
+builds:
+  - id: go-starter-http
+    main: ./cmd/http/main.go
+    env:
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
